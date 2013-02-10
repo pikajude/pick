@@ -37,7 +37,6 @@ int main(int argc, char **argv) {
     heap_init(hs);
 
     char l[24] = {0};
-    int j;
     while(fgets(l, sizeof l, input) != NULL) {
         heap_push(hs, make_ln(l));
         if(hs->count > count) heap_pop(hs);
